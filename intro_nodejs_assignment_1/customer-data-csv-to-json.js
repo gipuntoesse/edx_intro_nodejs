@@ -24,7 +24,7 @@ csvToJsonConverter = (fileName) => {
         })
         .on('done', (error) => {
 
-            if (error) { console.log(`Error: ${error.message}`) }
+            if (error) { return console.log(`Error: ${error.message}`) }
 
             jsonString = jsonString.substr(0, jsonString.length - 1) + ']'
 
